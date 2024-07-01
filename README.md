@@ -39,16 +39,26 @@ Para las implementaciones correspondientes a la tercera entrega se implemento po
 
 ```bash
 # Listar contenedores en ejecución
+
 docker ps
-# Acceder al contenedor de PostgreSQL 
+# Acceder al contenedor de PostgreSQL
+
 docker exec -it postgres_replica bash
-# Conectarse a la base de datos usando psql Utilizar la password del docker compose "Admin123456"
+# Conectarse alguna de las bases de datos usando psql Utilizar la password del docker compose "Admin123456"
+
+psql -U postgres -d UserDB
+
 psql -U postgres -d TrackingDB
+
 # Listar tablas
+
 \dt
 # Consultar datos de la tabla TrackingEvents
+
 SELECT * FROM "TrackingEvents"
+
 # Salir de psql
+
 \q
 
 # Salir del contenedor
