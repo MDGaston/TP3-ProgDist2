@@ -1,4 +1,4 @@
-# TP1-ProgDist2
+# TP1-ProgDist3
 
 # Instrucciones Trabajo práctico inicial
 
@@ -33,4 +33,24 @@ Se puede guardar el Token obtenido en la variable en postman Token(principal sug
 
 En esta version del tp se agregaron los endpoints correspondientes para poder probar la app de track de usuarios y la app de la Blacklist, ademas se agrego una aplicacion de consola TrackingConsumer que sera el encargado de logear los mensajes de las colas y de indicar si es de estado critico en caso de que el usuario ingrese a una URL blacklisteada. Estos logs se pueden encontrar en:
 
-\Tp2TrackingApi\Logs
+\Tp3 Replication\Logs
+
+Para las implementaciones correspondientes a la tercera entrega se implemento postgreSQL en reemplazo de SQL server y se implemento un nuevo contenedor para replicar la base de datos principal. Para realizar los test correspondientes en verificacion de la replicacion ingresar los siguientes comandos :
+
+```bash
+# Listar contenedores en ejecución
+docker ps
+# Acceder al contenedor de PostgreSQL 
+docker exec -it postgres_replica bash
+# Conectarse a la base de datos usando psql
+psql -U postgres -d TrackingDB
+# Listar tablas
+\dt
+# Consultar datos de la tabla TrackingEvents
+SELECT * FROM "TrackingEvents"
+# Salir de psql
+\q
+
+# Salir del contenedor
+exit
+```
