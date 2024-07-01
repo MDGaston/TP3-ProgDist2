@@ -42,7 +42,7 @@ Para las implementaciones correspondientes a la tercera entrega se implemento po
 docker ps
 # Acceder al contenedor de PostgreSQL 
 docker exec -it postgres_replica bash
-# Conectarse a la base de datos usando psql
+# Conectarse a la base de datos usando psql Utilizar la password del docker compose "Admin123456"
 psql -U postgres -d TrackingDB
 # Listar tablas
 \dt
