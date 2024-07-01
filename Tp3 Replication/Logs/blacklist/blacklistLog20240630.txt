@@ -1,0 +1,190 @@
+2024-06-30 00:10:24.823 +00:00 [INF] Application is shutting down...
+2024-06-30 00:15:18.781 +00:00 [INF] Starting web host
+2024-06-30 00:15:18.945 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 00:15:18.948 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 00:15:18.949 +00:00 [INF] Hosting environment: Development
+2024-06-30 00:15:18.949 +00:00 [INF] Content root path: /app
+2024-06-30 00:40:35.890 +00:00 [INF] Application is shutting down...
+2024-06-30 00:41:03.441 +00:00 [INF] Starting web host
+2024-06-30 00:41:03.627 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 00:41:03.631 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 00:41:03.632 +00:00 [INF] Hosting environment: Development
+2024-06-30 00:41:03.632 +00:00 [INF] Content root path: /app
+2024-06-30 01:40:22.787 +00:00 [INF] Application is shutting down...
+2024-06-30 01:40:40.646 +00:00 [INF] Starting web host
+2024-06-30 01:40:40.837 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 01:40:40.840 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 01:40:40.841 +00:00 [INF] Hosting environment: Development
+2024-06-30 01:40:40.841 +00:00 [INF] Content root path: /app
+2024-06-30 01:42:23.476 +00:00 [INF] Application is shutting down...
+2024-06-30 01:42:39.765 +00:00 [INF] Starting web host
+2024-06-30 01:42:39.944 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 01:42:39.947 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 01:42:39.947 +00:00 [INF] Hosting environment: Development
+2024-06-30 01:42:39.948 +00:00 [INF] Content root path: /app
+2024-06-30 02:10:55.261 +00:00 [INF] Application is shutting down...
+2024-06-30 02:12:21.145 +00:00 [INF] Starting web host
+2024-06-30 02:12:21.354 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 02:12:21.358 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 02:12:21.359 +00:00 [INF] Hosting environment: Development
+2024-06-30 02:12:21.359 +00:00 [INF] Content root path: /app
+2024-06-30 02:55:07.862 +00:00 [INF] Application is shutting down...
+2024-06-30 02:55:34.063 +00:00 [INF] Starting web host
+2024-06-30 02:55:34.255 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 02:55:34.258 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 02:55:34.259 +00:00 [INF] Hosting environment: Development
+2024-06-30 02:55:34.259 +00:00 [INF] Content root path: /app
+2024-06-30 03:17:29.108 +00:00 [INF] Application is shutting down...
+2024-06-30 03:18:55.906 +00:00 [INF] Starting web host
+2024-06-30 03:18:56.088 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 03:18:56.091 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 03:18:56.092 +00:00 [INF] Hosting environment: Development
+2024-06-30 03:18:56.092 +00:00 [INF] Content root path: /app
+2024-06-30 03:39:11.269 +00:00 [INF] Application is shutting down...
+2024-06-30 03:40:17.696 +00:00 [INF] Starting web host
+2024-06-30 03:40:17.837 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 03:40:17.840 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 03:40:17.841 +00:00 [INF] Hosting environment: Development
+2024-06-30 03:40:17.841 +00:00 [INF] Content root path: /app
+2024-06-30 03:46:24.991 +00:00 [INF] Request starting HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - null null
+2024-06-30 03:46:25.025 +00:00 [INF] Executing endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 03:46:25.040 +00:00 [INF] Route matched with {action = "CheckUrl", controller = "Blacklist"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUrl(System.String) on controller BlacklistApi.Controllers.BlacklistController (BlackListAPI).
+2024-06-30 03:46:25.058 +00:00 [INF] URL found in blacklist: blacklistedURL
+2024-06-30 03:46:25.064 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-06-30 03:46:25.081 +00:00 [INF] Executed action BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI) in 36.8436ms
+2024-06-30 03:46:25.083 +00:00 [INF] Executed endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 03:46:25.086 +00:00 [INF] Request finished HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - 200 null application/json; charset=utf-8 96.7163ms
+2024-06-30 03:46:30.130 +00:00 [INF] Application is shutting down...
+2024-06-30 03:48:30.530 +00:00 [INF] Starting web host
+2024-06-30 03:48:30.758 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 03:48:30.760 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 03:48:30.761 +00:00 [INF] Hosting environment: Development
+2024-06-30 03:48:30.761 +00:00 [INF] Content root path: /app
+2024-06-30 03:49:25.154 +00:00 [INF] Request starting HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - null null
+2024-06-30 03:49:25.181 +00:00 [INF] Executing endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 03:49:25.197 +00:00 [INF] Route matched with {action = "CheckUrl", controller = "Blacklist"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUrl(System.String) on controller BlacklistApi.Controllers.BlacklistController (BlackListAPI).
+2024-06-30 03:49:25.214 +00:00 [INF] URL found in blacklist: blacklistedURL
+2024-06-30 03:49:25.219 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-06-30 03:49:25.231 +00:00 [INF] Executed action BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI) in 31.9244ms
+2024-06-30 03:49:25.234 +00:00 [INF] Executed endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 03:49:25.236 +00:00 [INF] Request finished HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - 200 null application/json; charset=utf-8 83.574ms
+2024-06-30 03:51:39.435 +00:00 [INF] Application is shutting down...
+2024-06-30 19:07:47.354 +00:00 [INF] Starting web host
+2024-06-30 19:07:47.515 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 19:07:47.518 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 19:07:47.519 +00:00 [INF] Hosting environment: Development
+2024-06-30 19:07:47.519 +00:00 [INF] Content root path: /app
+2024-06-30 19:10:43.431 +00:00 [INF] Application is shutting down...
+2024-06-30 19:12:23.639 +00:00 [INF] Starting web host
+2024-06-30 19:12:23.786 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 19:12:23.789 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 19:12:23.789 +00:00 [INF] Hosting environment: Development
+2024-06-30 19:12:23.789 +00:00 [INF] Content root path: /app
+2024-06-30 19:18:35.775 +00:00 [INF] Application is shutting down...
+2024-06-30 19:19:19.066 +00:00 [INF] Starting web host
+2024-06-30 19:19:19.218 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 19:19:19.222 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 19:19:19.222 +00:00 [INF] Hosting environment: Development
+2024-06-30 19:19:19.223 +00:00 [INF] Content root path: /app
+2024-06-30 19:22:17.411 +00:00 [INF] Application is shutting down...
+2024-06-30 19:31:20.450 +00:00 [INF] Starting web host
+2024-06-30 19:31:20.622 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 19:31:20.625 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 19:31:20.625 +00:00 [INF] Hosting environment: Development
+2024-06-30 19:31:20.626 +00:00 [INF] Content root path: /app
+2024-06-30 19:32:09.641 +00:00 [INF] Request starting HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - null null
+2024-06-30 19:32:09.671 +00:00 [INF] Executing endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 19:32:09.691 +00:00 [INF] Route matched with {action = "CheckUrl", controller = "Blacklist"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUrl(System.String) on controller BlacklistApi.Controllers.BlacklistController (BlackListAPI).
+2024-06-30 19:32:09.712 +00:00 [INF] URL found in blacklist: blacklistedURL
+2024-06-30 19:32:09.718 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-06-30 19:32:09.735 +00:00 [INF] Executed action BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI) in 39.2403ms
+2024-06-30 19:32:09.738 +00:00 [INF] Executed endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 19:32:09.741 +00:00 [INF] Request finished HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - 200 null application/json; charset=utf-8 100.3391ms
+2024-06-30 19:52:57.216 +00:00 [INF] Application is shutting down...
+2024-06-30 19:53:35.903 +00:00 [INF] Starting web host
+2024-06-30 19:53:36.049 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 19:53:36.052 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 19:53:36.052 +00:00 [INF] Hosting environment: Development
+2024-06-30 19:53:36.053 +00:00 [INF] Content root path: /app
+2024-06-30 19:56:15.457 +00:00 [INF] Request starting HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - null null
+2024-06-30 19:56:15.490 +00:00 [INF] Executing endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 19:56:15.507 +00:00 [INF] Route matched with {action = "CheckUrl", controller = "Blacklist"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUrl(System.String) on controller BlacklistApi.Controllers.BlacklistController (BlackListAPI).
+2024-06-30 19:56:15.523 +00:00 [INF] URL found in blacklist: blacklistedURL
+2024-06-30 19:56:15.528 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-06-30 19:56:15.539 +00:00 [INF] Executed action BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI) in 29.7221ms
+2024-06-30 19:56:15.542 +00:00 [INF] Executed endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 19:56:15.544 +00:00 [INF] Request finished HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - 200 null application/json; charset=utf-8 88.8598ms
+2024-06-30 20:14:43.505 +00:00 [INF] Request starting HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - null null
+2024-06-30 20:14:43.508 +00:00 [INF] Executing endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 20:14:43.508 +00:00 [INF] Route matched with {action = "CheckUrl", controller = "Blacklist"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUrl(System.String) on controller BlacklistApi.Controllers.BlacklistController (BlackListAPI).
+2024-06-30 20:14:43.512 +00:00 [INF] URL found in blacklist: blacklistedURL
+2024-06-30 20:14:43.513 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-06-30 20:14:43.514 +00:00 [INF] Executed action BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI) in 5.3592ms
+2024-06-30 20:14:43.514 +00:00 [INF] Executed endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-06-30 20:14:43.515 +00:00 [INF] Request finished HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - 200 null application/json; charset=utf-8 10.0923ms
+2024-06-30 20:21:27.072 +00:00 [INF] Application is shutting down...
+2024-06-30 20:22:04.119 +00:00 [INF] Starting web host
+2024-06-30 20:22:04.279 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 20:22:04.282 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 20:22:04.282 +00:00 [INF] Hosting environment: Development
+2024-06-30 20:22:04.282 +00:00 [INF] Content root path: /app
+2024-06-30 20:22:06.499 +00:00 [INF] Application is shutting down...
+2024-06-30 20:22:46.652 +00:00 [INF] Starting web host
+2024-06-30 20:22:46.835 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 20:22:46.838 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 20:22:46.838 +00:00 [INF] Hosting environment: Development
+2024-06-30 20:22:46.838 +00:00 [INF] Content root path: /app
+2024-06-30 20:27:57.464 +00:00 [INF] Application is shutting down...
+2024-06-30 20:32:14.902 +00:00 [INF] Starting web host
+2024-06-30 20:32:15.039 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 20:32:15.042 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 20:32:15.043 +00:00 [INF] Hosting environment: Development
+2024-06-30 20:32:15.043 +00:00 [INF] Content root path: /app
+2024-06-30 20:41:39.425 +00:00 [INF] Application is shutting down...
+2024-06-30 20:42:10.763 +00:00 [INF] Starting web host
+2024-06-30 20:42:10.912 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 20:42:10.915 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 20:42:10.916 +00:00 [INF] Hosting environment: Development
+2024-06-30 20:42:10.916 +00:00 [INF] Content root path: /app
+2024-06-30 20:49:52.936 +00:00 [INF] Application is shutting down...
+2024-06-30 20:54:33.588 +00:00 [INF] Starting web host
+2024-06-30 20:54:33.775 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 20:54:33.777 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 20:54:33.778 +00:00 [INF] Hosting environment: Development
+2024-06-30 20:54:33.778 +00:00 [INF] Content root path: /app
+2024-06-30 21:07:53.328 +00:00 [INF] Application is shutting down...
+2024-06-30 21:08:51.601 +00:00 [INF] Starting web host
+2024-06-30 21:08:51.736 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 21:08:51.739 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 21:08:51.740 +00:00 [INF] Hosting environment: Development
+2024-06-30 21:08:51.740 +00:00 [INF] Content root path: /app
+2024-06-30 21:11:10.389 +00:00 [INF] Starting web host
+2024-06-30 21:11:10.559 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 21:11:10.564 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 21:11:10.565 +00:00 [INF] Hosting environment: Development
+2024-06-30 21:11:10.565 +00:00 [INF] Content root path: /app
+2024-06-30 21:17:04.949 +00:00 [INF] Application is shutting down...
+2024-06-30 21:18:47.166 +00:00 [INF] Starting web host
+2024-06-30 21:18:47.317 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 21:18:47.320 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 21:18:47.321 +00:00 [INF] Hosting environment: Development
+2024-06-30 21:18:47.321 +00:00 [INF] Content root path: /app
+2024-06-30 21:22:14.953 +00:00 [INF] Application is shutting down...
+2024-06-30 21:26:01.732 +00:00 [INF] Starting web host
+2024-06-30 21:26:01.904 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 21:26:01.906 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 21:26:01.907 +00:00 [INF] Hosting environment: Development
+2024-06-30 21:26:01.907 +00:00 [INF] Content root path: /app
+2024-06-30 21:27:50.425 +00:00 [INF] Application is shutting down...
+2024-06-30 21:28:30.960 +00:00 [INF] Starting web host
+2024-06-30 21:28:31.142 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 21:28:31.145 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 21:28:31.146 +00:00 [INF] Hosting environment: Development
+2024-06-30 21:28:31.146 +00:00 [INF] Content root path: /app
+2024-06-30 21:44:17.914 +00:00 [INF] Application is shutting down...
+2024-06-30 21:49:10.399 +00:00 [INF] Starting web host
+2024-06-30 21:49:10.562 +00:00 [INF] Now listening on: http://[::]:8003
+2024-06-30 21:49:10.568 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-30 21:49:10.569 +00:00 [INF] Hosting environment: Development
+2024-06-30 21:49:10.569 +00:00 [INF] Content root path: /app
+2024-06-30 22:46:49.893 +00:00 [INF] Application is shutting down...

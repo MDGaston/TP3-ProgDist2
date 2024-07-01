@@ -1,0 +1,14 @@
+2024-07-01 00:17:59.862 +00:00 [INF] Starting web host
+2024-07-01 00:18:00.084 +00:00 [INF] Now listening on: http://[::]:8003
+2024-07-01 00:18:00.088 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-07-01 00:18:00.088 +00:00 [INF] Hosting environment: Development
+2024-07-01 00:18:00.088 +00:00 [INF] Content root path: /app
+2024-07-01 00:18:35.918 +00:00 [INF] Request starting HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - null null
+2024-07-01 00:18:35.949 +00:00 [INF] Executing endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-07-01 00:18:35.967 +00:00 [INF] Route matched with {action = "CheckUrl", controller = "Blacklist"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CheckUrl(System.String) on controller BlacklistApi.Controllers.BlacklistController (BlackListAPI).
+2024-07-01 00:18:35.995 +00:00 [INF] URL found in blacklist: blacklistedURL
+2024-07-01 00:18:36.001 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Boolean'.
+2024-07-01 00:18:36.016 +00:00 [INF] Executed action BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI) in 45.2732ms
+2024-07-01 00:18:36.019 +00:00 [INF] Executed endpoint 'BlacklistApi.Controllers.BlacklistController.CheckUrl (BlackListAPI)'
+2024-07-01 00:18:36.022 +00:00 [INF] Request finished HTTP/1.1 GET http://blacklistapi:8003/api/blacklist/check?url=blacklistedURL - 200 null application/json; charset=utf-8 105.5153ms
+2024-07-01 00:25:45.371 +00:00 [INF] Application is shutting down...

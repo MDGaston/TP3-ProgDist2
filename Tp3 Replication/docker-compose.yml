@@ -1,0 +1,132 @@
+version: '3.9'
+
+services:
+  tp1apigateway:
+    image: ${DOCKER_REGISTRY-}tp1apigateway
+    build:
+      context: .
+      dockerfile: Tp1ApiGateway/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8080
+    ports:
+      - "8080:8080"
+    networks:
+      my_network:
+        ipv4_address: 172.16.238.10
+    volumes:
+      - ./Tp1ApiGateway/appsettings.json:/app/appsettings.json
+      - ./Logs/tp1apigateway:/app/Logs  # Directorio específico para los logs de tp1apigateway
+    command: sh -c "chmod -R 777 /app/Logs && dotnet Tp1ApiGateway.dll"  # Cambiar permisos
+
+  tp1usercontrollmanager:
+    image: ${DOCKER_REGISTRY-}tp1usercontrollmanager
+    build:
+      context: .
+      dockerfile: Tp1UserControllManager/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8000
+    ports:
+      - "8000:8000"
+    networks:
+      - my_network
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"  # RabbitMQ main port
+      - "15672:15672" # RabbitMQ management UI
+    environment:
+      RABBITMQ_DEFAULT_USER: user
+      RABBITMQ_DEFAULT_PASS: password
+    networks:
+      - my_network
+
+  tp2Trackingservice:
+    image: ${DOCKER_REGISTRY-}tp2trackingservice
+    build:
+      context: .
+      dockerfile: TrackingService/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8001
+    ports:
+      - "8001:8001"
+    networks:
+      - my_network
+
+  trackingConsumer:
+    image: ${DOCKER_REGISTRY-}trackingconsumer
+    build:
+      context: .
+      dockerfile: TrackingConsumer/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8002
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./Logs/trackingConsumer:/app/trackingLog  # Directorio específico para los logs de trackingConsumer
+    networks:
+      my_network:
+        ipv4_address: 172.16.238.20
+    depends_on:
+      - rabbitmq
+    command: sh -c "chmod -R 777 /app/trackingLog && sleep 30 && dotnet TrackingConsumer.dll"  # Cambiar permisos
+
+  blacklistapi:
+    image: ${DOCKER_REGISTRY-}blacklistapi
+    build:
+      context: .
+      dockerfile: BlackListAPI/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=8003
+    ports:
+      - "8003:8003"
+    volumes:
+      - ./Logs/blacklist:/app/Logs/blacklist  # Directorio específico para los logs de blacklist
+    networks:
+      - my_network
+    command: sh -c "chmod -R 777 /app/Logs/blacklist && dotnet BlackListAPI.dll"  # Cambiar permisos
+
+  database:
+    image: bitnami/postgresql:latest
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "Admin123456"
+      POSTGRES_DB: "UserDB"
+      POSTGRESQL_REPLICATION_MODE: master
+      POSTGRESQL_REPLICATION_USER : "postgres"
+      POSTGRESQL_REPLICATION_PASSWORD : "Admin123456"
+      REPMGR_FAILOVER : automatic
+    networks:
+      - my_network
+  
+  database_replica:
+    image: bitnami/postgresql:latest
+    container_name: postgres_replica
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "Admin123456"
+      POSTGRES_DB: "UserDB"
+      POSTGRESQL_REPLICATION_MODE:  "slave"
+      POSTGRESQL_MASTER_HOST :  "postgres"
+      POSTGRESQL_REPLICATION_USER : "postgres"
+      POSTGRESQL_REPLICATION_PASSWORD : "Admin123456"
+      REPMGR_FAILOVER : automatic
+    networks:
+      - my_network
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.238.0/24
