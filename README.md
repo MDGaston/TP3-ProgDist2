@@ -44,6 +44,7 @@ docker ps
 # Acceder al contenedor de PostgreSQL
 
 docker exec -it postgres_replica bash
+
 # Conectarse alguna de las bases de datos usando psql Utilizar la password del docker compose "Admin123456"
 
 psql -U postgres -d UserDB
