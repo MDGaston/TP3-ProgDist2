@@ -65,3 +65,5 @@ SELECT * FROM "TrackingEvents"
 # Salir del contenedor
 exit
 ```
+Documentacion de la tercera entrega :
+https://docs.google.com/document/d/12Qjn0zf4aDgDflYNdqWPr5vZWrHTULTj8ycOeMDmLls/edit?usp=sharing
